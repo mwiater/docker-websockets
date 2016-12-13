@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Websocket test</title>
+  </head>
+  <body>
+    <h1>Websocket test</h1>
+
+    <p>
+      Open the console to see what happens.
+    </p>
+
+    <script>
+var ws = new WebSocket('ws://'+window.location.hostname+':8080');
+ws.onopen = function(event) {
+   console.log('open: ', event);
+   ws.send('something');
+};
+ws.onmessage = function(message){
+   console.log('received: ', message);
+}; 
+    </script>
+  </body>
+</html>
+
