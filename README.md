@@ -1,6 +1,6 @@
 # Node.js WebSocket example in Docker
 
-Baeds off of this example, but made to work as a Swarm Service: https://github.com/lrutten/docker-nodejs-ws
+Based off of this example, but made to work as a Swarm Service: https://github.com/lrutten/docker-nodejs-ws
 
 ```
 docker service create \
